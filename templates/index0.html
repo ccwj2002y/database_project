@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Last Resort Hotel</title>
+    <link
+            rel="stylesheet"
+            href="main.css"
+    />
+</head>
+<body>
+
+<header>
+    <h1>Last Resort Hotel Management Reports</h1>
+    <p>
+        Today is {{ date }}
+    </p>
+</header>
+<main>
+    <section id="top">
+        <div id="top_left_container">
+            <h2>Basic Information</h2>
+            <p>
+                Hotel Guests: {{data['guest']}}
+                <a class='Button' href="{{ url_for('guest') }}">View</a>
+
+            </p>
+            <p>Rooms Used: {{data['room']}}
+            <a class='Button' href="{{ url_for('room') }}">View</a>
+            </p>
+            <p>Reservations:{{data['reservation']}}
+            <a class='Button' href="{{ url_for('reservation') }}">View</a>
+            </p>
+            <p>Revenue This Month:{{data['revenue']}}
+            <a class='Button' href="{{ url_for('finance') }}">View</a>
+            </p>
+        </div>
+
+    </section>
+
+</main>
+<footer>
+    <p>
+
+    </p>
+</footer>
+
+</body>
+</html>

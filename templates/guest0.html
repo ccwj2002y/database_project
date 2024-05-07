@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Last Resort Hotel</title>
+    <link
+            rel="stylesheet"
+            href="main.css"
+    />
+</head>
+<body>
+
+<header>
+    <h1>Last Resort Hotel Management Reports</h1>
+    <p>Today is {{ date }}</p>
+</header>
+<main >
+    <div id="report">
+            <h2>Guest Information</h2>
+
+            <p>Hotel Guests:{{data['total']}}</p>
+            <p>Arrived Today:{{data['arrived']}}</p>
+            <p>Guests Leaving Today:{{data['leaving']}}</p>
+
+            <h3>Guest Flow Statistics:</h3>
+            <img src={{image_file}} alt="guest flow chart">
+
+        </div>
+</main>
+<footer>
+    <p>
+
+    </p>
+</footer>
+
+</body>
+</html>

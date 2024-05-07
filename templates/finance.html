@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block container %}
+<main >
+    <div id="mainLeft">
+            <h2>Revenues</h2>
+            <p>Revenue Today:{{rev_data['today']}}</p>
+            <p>Revenue This Week:{{rev_data['week']}}</p>
+            <p>Revenue This Month:{{rev_data['month']}}</p>
+    </div>
+    <div id="mainMiddle">
+            <p>Revenue from Sleeping Rooms:{{room_detail['sleeping']}}</p>
+            <p>Revenue from Meeting Rooms:{{room_detail['meeting']}}</p>
+            <p>Revenue from Suits:{{room_detail['suit']}}</p>
+    </div>
+    <div id="mainRight">
+            <p>Service Revenue:{{other_data['service']}}</p>
+            <p>Biggest Billing Party:{{other_data['party']}}</p>
+
+    </div>
+</main>
+{% endblock %}

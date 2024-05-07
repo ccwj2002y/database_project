@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block container %}
+<main >
+    <div id="mainLeft">
+        <h1>Room Information</h1>
+            <p class="welcomeText">You can find the room information on the right.</p>
+            <p class="welcomeText">If you want to switch to other information, we can select the category by the button above.</p>
+
+
+    </div>
+
+    <div id="mainRight">
+            <h2>Room Usage</h2>
+            <div class='category'>
+                <p>Total Rooms: {{data['total']}}</p>
+                <p>Rooms Available: {{data['available']}}</p>
+                <p>Cleaning: {{data['cleaning']}}</p>
+                <p>Sleeping Rooms: {{data['sleeping']}}</p>
+                <p>Meeting Rooms: {{data['meeting']}}</p>
+                <p>Suits: {{data['suit']}}</p>
+            </div>
+    </div>
+</main>
+{% endblock %}

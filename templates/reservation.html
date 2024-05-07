@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block container %}
+<main >
+    <div id="mainLeft">
+        <h2>Reservation & Events</h2>
+        <h3>Reservation Information</h3>
+                <p>Total Reservations:{{res_data['total']}}</p>
+                <p>Guests Arriving Tomorrow:{{res_data['tomorrow']}}</p>
+
+    </div>
+
+    <div id="mainMiddle">
+        <h4>Events Information</h4>
+                <p>Events This Week:{{event_data['this']}}</p>
+                <p>Events Next Week:{{event_data['next']}}</p>
+
+    </div>
+    <div id="mainRight">
+        <h5>Today's Events</h5>
+            {% for key, value in event_detail.items() %}
+                <p>{{key}}</p>
+                <p>{{value}}</p>
+            {% endfor %}
+
+    </div>
+</main>
+{% endblock %}

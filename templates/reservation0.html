@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Last Resort Hotel</title>
+    <link
+            rel="stylesheet"
+            href="main.css"
+    />
+</head>
+<body>
+
+<header>
+    <h1>Last Resort Hotel Management Reports</h1>
+    <p>Today is {{ date }}</p>
+</header>
+<main >
+    <div id="report">
+        <h2>Reservation & Events</h2>
+        <h3>Reservation Information</h3>
+                <p>Total Reservations:{{res_data['total']}}</p>
+                <p>Guests Arriving Tomorrow:{{res_data['tomorrow']}}</p>
+        <h4>Events Information</h4>
+                <p>Events This Week:{{event_data['this']}}</p>
+                <p>Events Next Week:{{event_data['next']}}</p>
+
+
+        <h5>Today's Events</h5>
+            {% for key, value in event_detail.items() %}
+                <p>{{key}}</p>
+                <p>{{value}}</p>
+            {% endfor %}
+
+    </div>
+</main>
+<footer>
+    <p>
+
+    </p>
+</footer>
+
+</body>
+</html>

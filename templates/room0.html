@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Last Resort Hotel</title>
+    <link
+            rel="stylesheet"
+            href="main.css"
+    />
+</head>
+<body>
+
+<header>
+    <h1>Last Resort Hotel Management Reports</h1>
+    <h2>Today is {{ date }}</h2>
+</header>
+<main >
+    <div id="report">
+
+            <h3>Room Information</h3>
+            <p>Total Rooms: {{data['total']}}</p>
+            <p>Rooms Available: {{data['available']}}</p>
+            <p>Cleaning: {{data['cleaning']}}</p>
+            <p>Sleeping Rooms: {{data['sleeping']}}</p>
+            <p>Meeting Rooms: {{data['meeting']}}</p>
+            <p>Suits: {{data['suit']}}</p>
+
+    </div>
+</main>
+<footer>
+    <p>
+
+    </p>
+</footer>
+
+</body>
+</html>

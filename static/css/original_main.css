@@ -1,0 +1,29 @@
+/* rules for the whole page */
+body {
+    text-align: center;
+}
+
+/* rules for the header */
+header {
+    margin-left: 270px;
+    width: 1000px;
+}
+
+/* rules for the content part of the page */
+main {
+    margin-left: 270px;
+}
+
+/* rules for each section of the page */
+#top, #center, #bottom {
+    display: flex;
+}
+
+div {
+    border: solid black 2px;
+    width: 500px;
+}
+
+#report {
+    margin-left: 270px;
+}

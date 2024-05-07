@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block container %}
+<main>
+
+        <div id='mainLeft'>
+            <h1>Basic Information</h1>
+            <p class="welcomeText">You can find some basic information on the right.</p>
+            <p class="welcomeText">If you want further information, click the view button to see detailed information for different parts.</p>
+        </div>
+        <div id='mainRight'>
+            <div class='category'>
+            <p>
+                Hotel Guests: {{data['guest']}} <br>
+                <a class='actionButton' href="{{ url_for('guest') }}">View</a>
+            </p>
+            </div>
+
+            <div class='category'>
+            <p>Rooms Used: {{data['room']}} <br>
+                <a class='actionButton' href="{{ url_for('room') }}">View</a>
+            </p>
+            </div>
+
+            <div class='category'>
+            <p>Reservations:{{data['reservation']}} <br>
+                <a class='actionButton' href="{{ url_for('reservation') }}">View</a>
+            </p>
+            </div>
+
+            <div class='category'>
+            <p>Revenue This Month:{{data['revenue']}} <br>
+                <a class='actionButton' href="{{ url_for('finance') }}">View</a>
+            </p>
+            </div>
+
+        </div>
+
+
+
+</main>
+{% endblock %}

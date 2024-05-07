@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Last Resort Hotel</title>
+    <link
+            rel="stylesheet"
+            href="main.css"
+    />
+</head>
+<body>
+
+<header>
+    <h1>Last Resort Hotel Management Reports</h1>
+    <p>
+        Today is {{ date }}
+    </p>
+</header>
+<main >
+    <div id="report">
+            <h2>Revenues</h2>
+            <p>Revenue Today:{{rev_data['today']}}</p>
+            <p>Revenue This Week:{{rev_data['week']}}</p>
+            <p>Revenue This Month:{{rev_data['month']}}</p>
+            <p>Revenue from Sleeping Rooms:{{room_detail['sleeping']}}</p>
+            <p>Revenue from Meeting Rooms:{{room_detail['meeting']}}</p>
+            <p>Revenue from Suits:{{room_detail['suit']}}</p>
+            <p>Service Revenue:{{other_data['service']}}</p>
+            <p>Biggest Billing Party:{{other_data['party']}}</p>
+
+        </div>
+</main>
+<footer>
+    <p>
+
+    </p>
+</footer>
+
+</body>
+</html>

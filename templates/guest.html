@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block container %}
+<main>
+    <div id="mainLeft">
+            <h1>Guest Information</h1>
+
+            <p>Hotel Guests:{{data['total']}}</p>
+            <p>Arrived Today:{{data['arrived']}}</p>
+            <p>Guests Leaving Today:{{data['leaving']}}</p>
+    </div>
+
+
+
+    <div id='mainRight'>
+            <h3>Guest Flow Statistics:</h3>
+            <img src={{image_file}} alt="guest flow chart" width="500" height="300">
+
+    </div>
+</main>
+{% endblock %}
